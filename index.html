@@ -3,6 +3,276 @@
 <link href="https://fonts.googleapis.com/css?family=Molle:400i" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900|Open+Sans:300,400,600,800" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+  html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  overflow-x: hidden;
+  color: #262626;
+}
+
+.row {
+  margin: 0;
+}
+
+a {
+  color: #869dba;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tr {
+   border-bottom: 1px solid #dddddd;
+}
+td, th {
+    text-align: left;
+    padding: 10px;
+}
+
+.btn {
+  padding: 4px 10px;
+  background: #35b8e0;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #35b8e0;
+  border-radius: 3px;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #35b8e0;
+  border-color: #35b8e0;
+  transition: 0.2s;
+}
+
+.btn-green {
+  background: #5fba7d;
+  border-color: #5fba7d;
+}
+
+.btn-green:hover {
+  background: #fff;
+  border-color: #5fba7d;
+  color: #5fba7d;
+}
+
+
+.btn-red {
+  background: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.btn-red:hover {
+  background: #fff;
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+
+.small {
+  font-size: 10px;
+}
+
+.dashboard-nav .material-icons {
+  font-size: 16px;
+}
+
+.dashboard-user-info {
+  padding: 0 10px 10px;
+  text-align: center;
+}
+
+.dashboard-menu {
+  position: relative;
+}
+
+.dashboard-options {
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dashboard-options span {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.dashboard-nav ul li a {
+  color: #869dba;
+  display: block;
+}
+
+.dashboard-nav ul li:hover {
+  background: #2a333f;
+  cursor: pointer;
+}
+
+.dashboard-nav ul li:hover a {
+  color: #abbfd8;
+}
+
+.dashboard-nav span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dashboard-item-name {
+  padding-left: 5px;
+}
+
+.material-icons:hover {
+  cursor: pointer;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.dashboard-menu {
+  padding: 0;
+  background: #19222D;
+  color: #869dba;
+}
+
+.dashboard-nav ul li {
+  padding: 10px 10px;
+}
+
+.logo {
+  width: 100%;
+  font-size: 36px;
+  font-family: 'Molle', sans-serif;
+  color: #35B8E0;
+  text-align: center;
+}
+
+.avatar {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 25px auto;
+}
+
+.avatar img {
+  height: 100%;
+}
+
+.dashboard-main {
+  background: #f7f7f7;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.dashboard-main .row {
+  margin: 0;
+}
+
+.dashboard-component-inner {
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.03), 0 10px 10px rgba(0,0,0,0.02);
+  transition: 0.3s;
+}
+
+.dashboard-component-inner:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.05), 0 10px 10px rgba(0,0,0,0.04);
+  transition: 0.3s;
+}
+
+.dashboard-component-header {
+  padding: 20px 10px;
+}
+
+.dashboard-component-header h3 {
+  margin: 0;
+}
+
+.dashboard-main-header {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.dashboard-row.row {
+  margin-bottom: 25px;
+}
+
+.dashboard-single-row {
+  padding: 10px;
+  display: block;
+}
+
+.dashboard-single-row:hover {
+  background: #f9f9f9;
+}
+
+.dashboard-single-row:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.map .dashboard-component-inner, .expense-reports .dashboard-component-inner {
+  height: 350px;
+  overflow: hidden;
+}
+
+#map {
+  height: 275px;
+  width: 100%;
+}
+
+.urgent {
+  height: 20px;
+  overflow: hidden;
+}
+
+.urgent-items, .urgent-title {
+  height: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 275px;
+}
+
+.expense-table tr td:last-child {
+  color: red;
+}
+</style>
+
 
 
 <div class="row">
@@ -295,5 +565,125 @@
 </div>
 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+<script>
+  // Coordinates to center the map
+    var myLatlng = new google.maps.LatLng(40.4107662,-80.061533);
+ 
+    // Other options for the map, pretty much selfexplanatory
+    var mapOptions = {
+        zoom: 8,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: [
+    {
+        "stylers": [
+            {
+                "saturation": -100
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#0099dd"
+            }
+        ]
+    },
+    {
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#aadd55"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "labels.text",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {}
+]
+    };
+ 
+    // Attach a map to the DOM Element, with the defined settings
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+
+// Chart Sample
+
+var ctx = document.getElementById("profitChart").getContext('2d');
+var data = {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
+    datasets: [{ 
+        data: [125, 300, 0, 340, 4500, 250, 200, 0, 0, 2500, 250, 300],
+        label: "Expenses",
+        borderColor: "rgba(214, 48, 49,1.0)",
+        fill: true,
+        backgroundColor: "rgba(214, 48, 49,0.4)",
+        pointBackgroundColor: "rgba(214, 48, 49,1.0)"
+      }, { 
+        data: [550, 1250, 550, 550, 2500, 1250, 1250, 550, 1250, 2500, 2500, 2500],
+        label: "Income",
+        borderColor: "rgba(0, 184, 148,1.0)",
+        fill: true,
+        backgroundColor: "rgba(0, 184, 148,0.4)",
+        pointBackgroundColor: "rgba(0, 184, 148,1.0)"
+      }
+    ]};
+
+var profitChart = new Chart(ctx, {
+    type: 'line',
+    data: data,
+    options: {
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                stacked: false
+            }]
+        },
+        legend: {
+              display: true,
+              labels: {
+                  fontColor: '#161616',
+                  usePointStyle: true
+              }
+          }
+    }
+});
+</script>
 </body>
 <html>
