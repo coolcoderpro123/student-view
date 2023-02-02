@@ -1,60 +1,299 @@
-
-<!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-</head>
 <body>
+<link href="https://fonts.googleapis.com/css?family=Molle:400i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900|Open+Sans:300,400,600,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<div class="sidenav">
-  <a href="#about">Home</a>
-  <a href="https://teachboard.vercel.app/student.html">Courses</a>
-  <a href="#contact">Sign out</a>
+
+<div class="row">
+  <div class="dashboard-menu col-lg-2 col-md-2 col-sm-4 col-xs-12">
+    <div class="logo">
+      landerr
+    </div>
+    <div class="avatar">
+      <img src="https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb"/>
+    </div>
+    <div class="dashboard-user-info">
+      <h4>Welcome, <span class="dashboard-user-name">Josh Jones</span></h4>
+      
+    </div>
+    <div class="dashboard-nav">
+      <ul>
+        <li><a href="#"><span><i class="material-icons">person_pin</i></span><span class="dashboard-item-name">Tenants</span></a></li>
+        <li><a href="#"><span><i class="material-icons">near_me</i></span><span class="dashboard-item-name">Properties Overview</span></a></li>
+        <li><a href="#"><span><i class="material-icons">vpn_key</i></span><span class="dashboard-item-name">Property Records</span></a></li>
+        <li><a href="#"><span><i class="material-icons">trending_up</i></span><span class="dashboard-item-name">Income Summary</span></a></li>
+        <li><a href="#"><span><i class="material-icons">trending_down</i></span><span class="dashboard-item-name">Expenses</span></a></li>
+        <li><a href="#"><span><i class="material-icons">alarm_on</i></span><span class="dashboard-item-name">Reminders</span></a></li>
+        <li><a href="#"><span><i class="material-icons">notifications_active</i></span><span class="dashboard-item-name">Urgent Items</span></a></li>
+      </ul>
+    </div>
+    <div class="dashboard-options">
+      <div class="dashboat-option"><a href="#"><div><span><i class="material-icons">power_settings_new</i></span><span>Sign out</span></div></a></div>
+      <div class="version-number small">Copyright Corey Bush, 2018 - v1.0b</div>
+    </div>
+  </div>
+  <div class="dashboard-main col-lg-10 col-md-10 col-sm-8 col-xs-12">
+    <div class="dashboard-main-header">
+      <div class="dashboard-heading left">
+        <h1>Dashboard</h1>
+      </div>
+      <div class="urgent right">
+        <div class="urgent-title inline left">Urgent: </div>
+        <div class="urgent-items inline right">
+          <ul>
+            <li>Zac has a roof leak at 179 Oak Drive.</li>
+            <li>Janey has overdue rent at 200 Chestnut Street.</li>
+            <li>Courtney has overdue rent at 104 Maple Ave.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    
+    <div class="dashboard-row row">
+      
+      <div class="dashboard-component notifications col-md-4 col-xs-12">
+        <div class="dashboard-component-inner">
+          <div class="dashboard-component-header">
+            <h3 class="left">Tenant Requests</h3>
+            <i class="material-icons right">more_vert</i>
+            <div class="clear"></div>
+          </div>
+          <div class="notification dashboard-single-row">
+            <div class="notification-details inline left"><span class="notification-name">Zac Richards</span> submitted a <span class="notification-type">lawn care request</span>.</div>
+            <div class="notification-date inline right">
+              <span>02/23/2018</span>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="notification dashboard-single-row">
+            <div class="notification-details inline left"><span class="notification-name">Zac Richards</span> submitted a <span class="notification-type">maintenance request</span>.</div>
+            <div class="notification-date inline right">
+              <span>02/23/2018</span>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="notification dashboard-single-row">
+            <div class="notification-details inline left"><span class="notification-name">Zac Richards</span> submitted a <span class="notification-type">late payment request</span>.</div>
+            <div class="notification-date inline right">
+              <span>02/23/2018</span>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-component notifications col-md-4 col-xs-12">
+        <div class="dashboard-component-inner">
+          <div class="dashboard-component-header">
+            <h3 class="left">Tenant Form Submissions</h3>
+            <i class="material-icons right">more_vert</i>
+            <div class="clear"></div>
+          </div>
+          <div class="notification dashboard-single-row">
+            <div class="notification-details inline left"><span class="notification-name">John Jones</span> submitted a <span class="notification-type">lease renewal</span>.</div>
+            <div class="notification-date inline right">
+              <span>02/23/2018</span>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="notification dashboard-single-row">
+            <div class="notification-details inline left"><span class="notification-name">Zac Richards</span> submitted a <span class="notification-type">move-in condition report</span>.</div>
+            <div class="notification-date inline right">
+              <span>02/23/2018</span>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="notification dashboard-single-row">
+            <div class="notification-details inline left"><span class="notification-name">Lizzy Smith</span> submitted a <span class="notification-type">damage report</span>.</div>
+            <div class="notification-date inline right">
+              <span>02/23/2018</span>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="dashboard-component notifications col-md-4 col-xs-12">
+        <div class="dashboard-component-inner">
+          <div class="dashboard-component-header">
+            <h3 class="left">Upcoming Items</h3>
+            <i class="material-icons right">more_vert</i>
+            <div class="clear"></div>
+          </div>
+          <div class="notification dashboard-single-row">
+            <div class="notification-details inline left"><span class="notification-name">Zac Richards</span> submitted a <span class="notification-type">maintenance request</span>.</div>
+            <div class="notification-date inline right">
+              <span>02/23/2018</span>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="notification dashboard-single-row">
+            <div class="notification-details inline left"><span class="notification-name">Zac Richards</span> submitted a <span class="notification-type">maintenance request</span>.</div>
+            <div class="notification-date inline right">
+              <span>02/23/2018</span>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="notification dashboard-single-row">
+            <div class="notification-details inline left"><span class="notification-name">Zac Richards</span> submitted a <span class="notification-type">maintenance request</span>.</div>
+            <div class="notification-date inline right">
+              <span>02/23/2018</span>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      
+    </div> <!-- /dashboard-row -->
+    
+    <div class="dashboard-row row">
+      
+      <div class="dashboard-component expense-reports col-md-6 col-xs-12">
+        <div class="dashboard-component-inner">
+          <div class="dashboard-component-header">
+            <h3 class="left">Properties List</h3>
+            <i class="material-icons right">more_vert</i>
+            <div class="clear"></div>
+          </div>
+          <div class="dashboard-single-row">
+            <div class="notification-details inline left">178 Oak Drive, Townsville, PA</div>
+            <div class="notification-date inline right">
+              <a class="btn btn-red" href="#">Vacant</a>
+              <a class="btn btn-view" href="#">View</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="dashboard-single-row">
+            <div class="notification-details inline left">248 Crescent Ave, Townsville, PA</div>
+            <div class="notification-date inline right">
+              <a class="btn btn-green" href="#">Rented</a>
+              <a class="btn btn-view" href="#">View</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="dashboard-single-row">
+            <div class="notification-details inline left">16 Pine Ave, Townsville, PA</div>
+            <div class="notification-date inline right">
+              <a class="btn btn-red" href="#">Vacant</a>
+              <a class="btn btn-view" href="#">View</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="dashboard-single-row">
+            <div class="notification-details inline left">213 Hemlock Street Unit 2B, Townsville, PA</div>
+            <div class="notification-date inline right">
+              <a class="btn btn-green" href="#">Rented</a>
+              <a class="btn btn-view" href="#">View</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="dashboard-single-row">
+            <div class="notification-details inline left">245 Road Street, Townsville, PA</div>
+            <div class="notification-date inline right">
+              <a class="btn btn-green" href="#">Rented</a>
+              <a class="btn btn-view" href="#">View</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="dashboard-single-row">
+            <div class="notification-details inline left">104 Maple Ave, Townsville, PA</div>
+            <div class="notification-date inline right">
+              <a class="btn btn-red" href="#">Vacant</a>
+              <a class="btn btn-view" href="#">View</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="dashboard-single-row">
+            <div class="notification-details inline left">602 Chestnut Ave, Townsville, PA</div>
+            <div class="notification-date inline right">
+              <a class="btn btn-green" href="#">Rented</a>
+              <a class="btn btn-view" href="#">View</a>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-component map col-md-6 col-xs-12">
+        <div class="dashboard-component-inner">
+          <div class="dashboard-component-header">
+            <h3 class="left">Properties Map</h3>
+            <i class="material-icons right">more_vert</i>
+            <div class="clear"></div>
+          </div>
+          <div id="map"></div>
+        </div>
+      </div>
+      
+    </div> <!-- /dashboard-row -->
+    
+    <div class="dashboard-row row">
+      
+      <div class="dashboard-component expense-reports col-md-8 col-xs-12">
+        <div class="dashboard-component-inner">
+          <div class="dashboard-component-header">
+            <h3 class="left">Expense Summary</h3>
+            <i class="material-icons right">more_vert</i>
+            <div class="clear"></div>
+          </div>
+          <table class="expense-table">
+            <tr>
+              <th>Property</th>
+              <th>Expense</th>
+              <th>Amount</th>
+            </tr>
+            <tr>
+              <td>178 Oak Drive, Townsville, PA</td>
+              <td>Carpeting</td>
+              <td>-($500.00)</td>
+            </tr>
+            <tr>
+              <td>248 Crescent Ave, Townsville, PA</td>
+              <td>Plumbing Fix</td>
+              <td>-($125.00)</td>
+            </tr>
+            <tr>
+              <td>213 Hemlock Street Unit 2B, Townsville, PA</td>
+              <td>Water Heater</td>
+              <td>-($300.00)</td>
+            </tr>
+            <tr>
+              <td>104 Maple Ave, Townsville, PA</td>
+              <td>New Roof</td>
+              <td>-($12000.00)</td>
+            </tr>
+            <tr>
+              <td>602 Chestnut Ave, Townsville, PA</td>
+              <td>Shingle Patch</td>
+              <td>-($750.00)</td>
+            </tr>
+            <tr>
+              <td>602 Chestnut Ave Unit 2, Townsville, PA</td>
+              <td>Carpeting</td>
+              <td>-($500.00)</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="dashboard-component map col-md-4 col-xs-12">
+        <div class="dashboard-component-inner">
+          <div class="dashboard-component-header">
+            <h3 class="left">Income vs. Expense: 213 Hemlock Street Unit 2B</h3>
+            <i class="material-icons right">more_vert</i>
+            <div class="clear"></div>
+          </div>
+          <div class="chart-container">
+            <canvas id="profitChart"></canvas>
+          </div>
+        </div>
+      </div>
+      
+    </div> <!-- /dashboard-row -->
+    
+    
+  </div>
 </div>
 
-<div class="main">
-  <h2>Home</h2>
-  </div>
-   
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
 </body>
-</html> 
+<html>
